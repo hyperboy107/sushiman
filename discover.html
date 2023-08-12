@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/sushi.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sushiman</title>
+    <link  href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(44, 153, 146);
+            color: white;
+        }
+        header::before{
+            
+            content: "";
+            position: absolute;
+            /*top zero and left zero using because of if the image no taking space to top that's why*/
+            top: 0;
+            left: 0;background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        .navi{
+            font-family: 'Bree Serif' , serif;
+            font-size: 22px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        section{
+            font-family: 'Bree Serif' , serif;
+            height: 344px;
+            margin: 3px 230px;
+            display: flex;
+            /* default flex direction is row flex-direction: row; */
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+        /*before pseudo selector
+        section::before{
+            content: "Hola!"
+        }*/
+        h2{
+            font-size: 4em;
+        }
+        p{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navi">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h2>Sushiman</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, nam?a Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ab.</p>
+        </section>
+    
+</body>
+</html>
